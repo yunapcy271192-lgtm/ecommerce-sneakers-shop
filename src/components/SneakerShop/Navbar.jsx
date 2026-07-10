@@ -1,4 +1,8 @@
+import { useDispatch } from "react-redux";
+import { toggleDrawer } from "../redux/drawerSlice";
+
 function Navbar() {
+  const dispatch = useDispatch();
   return (
     <nav className="flex justify-between items-center py-4 md:px-12 border-b border-gray-200 max-w-7xl mx-auto">
       <div className="flex items-center gap-14">
@@ -59,6 +63,8 @@ function Navbar() {
             src="https://asianwiki.com/images/1/18/Chanyeol-1992-p1.jpeg"
             alt="img"
             className="w-10 h-10 rounded-full border-2 border-transparent hover:border-gray-600 cursor-pointer"
+            onClick={() => dispatch(toggleDrawer())}
+            style={{ cursor: "pointer" }}
           />
         </div>
       </div>
@@ -67,4 +73,3 @@ function Navbar() {
 }
 
 export default Navbar;
- 
