@@ -8,7 +8,7 @@ export default function Form() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    dispatch(login()); // Dispatch the login action when the form is submitted
+    dispatch(login());
   };
 
   return (
