@@ -7,7 +7,7 @@ import Form from "./components/Form";
 import { useSelector } from "react-redux";
 
 function App() {
-  const isLoggedIn = useSelector((state) => state.drawer.isLoggedIn); // Replace with your actual authentication logic
+  const isLoggedIn = useSelector((state) => state.drawer.isLoggedIn);
   return (
     <>
       {isLoggedIn ? (
